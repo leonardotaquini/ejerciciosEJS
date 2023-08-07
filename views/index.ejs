@@ -9,6 +9,13 @@
     <h1><%= title %></h1>
     
     <!-- Mostrar los posts aquí -->
+    <ul>
+        <% posts.forEach(function(post) { %>
+          <p><%= post.description %></p>
+          <small>-<%= post.author %></small>
+        <% }); %>
+      </ul>
+      
 
 </body>
 </html>
